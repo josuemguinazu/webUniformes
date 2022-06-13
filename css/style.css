@@ -396,13 +396,13 @@ select:focus {
 }
 @keyframes grow {
   0% {
-    transform: scale(0);
+    transform: scale(0.1);
   }
   50% {
     transform: scale(1);
   }
   100% {
-    transform: scale(0);
+    transform: scale(0.1);
   }
 }
 .head-izq h1 {
