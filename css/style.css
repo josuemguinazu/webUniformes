@@ -342,7 +342,7 @@ select:focus {
 /* fin main contacto */
 
 /** Animaciones y transiciones para desafío 'crear repositorio en github' **/
-.head-izq h1:hover {
+h3:hover {
   animation: ejemplo 4s infinite;
 }
 @keyframes ejemplo {
