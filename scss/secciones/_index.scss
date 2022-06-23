@@ -1,0 +1,21 @@
+main {
+  margin-top: 1%;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 1%;
+    width: 95vw;
+    .hero {
+      height: 100%;
+      width: 100%;
+    }
+    .herotxt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 22px;
+      font-size: 1.6rem;
+    }
+  }
+}

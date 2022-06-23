@@ -1,0 +1,142 @@
+@import "./secciones/index";
+
+/* fuente de google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Oxygen:wght@300;700&display=swap");
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-family: "Oxygen", sans-serif;
+}
+/* Paul Irish box sizing */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Raíz */
+:root {
+  --primario: #2b30ba;
+  --secundario: #20a778;
+  --terciario: #757575;
+  --back: #d1d1d1c0;
+}
+body {
+  background-color: var(--back);
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  main {
+    margin-bottom: 1rem;
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+  a {
+    color: black;
+  }
+}
+
+/* HEADER NavBar */
+.header {
+  .navbar {
+    width: 100vw;
+    background: rgba(165, 202, 209, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(165, 202, 209, 0.25);
+    .container-fluid img {
+      width: 2rem;
+      margin-right: 2%;
+    }
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      .nav-item {
+        text-align: center;
+        margin: 1.8rem;
+        padding: 1px;
+
+        &:hover {
+          background: rgba(203, 228, 233, 0.16);
+          border-left: 1px solid #2b30ba;
+          border-right: 1px solid #2b30ba;
+          border-radius: 12%;
+          transition: 0.25s;
+        }
+      }
+      .nav-link a {
+        color-scheme: black;
+      }
+
+      .btn-outline-success {
+        color: black;
+        border: 1px solid #2b30ba;
+
+        &:hover {
+          background: rgba(215, 230, 233, 0.16);
+          color: rgb(13, 0, 161);
+        }
+      }
+      .dropdown-menu {
+        background-color: rgba(165, 202, 209, 0.559);
+
+        .dropdown-item:hover {
+          background-color: rgba(181, 226, 235, 0.559);
+          transition: 0.3s;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 22px;
+  background: rgba(177, 211, 218, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(165, 202, 209, 0.25);
+  height: auto;
+  .fa-brands {
+    font-size: 3rem;
+  }
+
+  .fa-instagram:hover {
+    background: -webkit-linear-gradient(
+      rgb(191, 5, 175),
+      rgb(255, 242, 0),
+      rgb(203, 11, 11)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fa-youtube:hover {
+    color: rgb(229, 14, 14);
+  }
+
+  .redes ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .footinfo {
+    display: grid;
+    justify-items: center;
+  }
+}
