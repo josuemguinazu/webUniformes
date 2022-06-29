@@ -1,0 +1,13 @@
+%subtPags {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #77c2c9 0%,
+    #4e5cec 50%,
+    #1501eb 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

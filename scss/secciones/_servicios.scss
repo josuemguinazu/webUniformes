@@ -1,0 +1,25 @@
+.servicios {
+  img {
+    max-width: 100%;
+  }
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 12px;
+  margin-top: 1%;
+  text-align: center;
+  height: 30rem;
+}
+
+@media (max-width: 688px) {
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .servicios img {
+    max-width: 100%;
+    max-height: 60%;
+  }
+}

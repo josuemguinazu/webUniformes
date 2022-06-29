@@ -1,0 +1,19 @@
+.carousel-inner {
+  margin: 2.5% auto;
+  width: 90%;
+}
+
+.carousel-item img {
+  margin: 0 auto;
+  max-width: 60%;
+  border-top-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+}
+
+@media (max-width: 688px) {
+  .carousel-item img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+}

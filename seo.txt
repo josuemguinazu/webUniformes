@@ -1,0 +1,8 @@
+-extend aplicado a: h2 de todo el proyecto.
+-mixin aplicado a: botón hover de la page contacto.
+
+Modificaciones SEO:
+1) Se modifica la etiqueta Title de todos los html
+2) Se agrega etiqueta keywords en todos los html
+3) Se agrega etiqueta description en todos los html
+4) Se agrega carpeta pages en el proyecto, en la que se incluyen todos los html a excepción del index.html

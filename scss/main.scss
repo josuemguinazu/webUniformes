@@ -1,8 +1,14 @@
-@import "./secciones/index";
+@import "./secciones/_index";
+@import "./secciones/_servicios";
+@import "./secciones/_empresa";
+@import "./secciones/_admin";
+@import "./secciones/_sanid";
+@import "./secciones/vars/_mixins";
+@import "./secciones/_contacto";
+@import "./secciones/vars/_extends";
 
 /* fuente de google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Oxygen:wght@300;700&display=swap");
-/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,9 +40,11 @@ body {
     margin-bottom: 1rem;
   }
   h1,
-  h2,
   h3 {
     text-align: center;
+  }
+  h2 {
+    @extend %subtPags;
   }
   a {
     color: black;
@@ -54,7 +62,7 @@ body {
     border: 1px solid rgba(165, 202, 209, 0.25);
     .container-fluid img {
       width: 2rem;
-      margin-right: 2%;
+      margin-right: 4%;
     }
     .navbar-nav {
       width: 100%;
@@ -138,5 +146,27 @@ body {
   .footinfo {
     display: grid;
     justify-items: center;
+  }
+}
+
+/* media */
+@media (max-width: 688px) {
+  .nav-item {
+    margin: 0.5rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    .redes {
+      width: 100%;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
   }
 }

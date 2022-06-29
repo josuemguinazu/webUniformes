@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto, informacion, email, telefono, pedidos">
+    <meta name="description" content="Contáctenos ahora y a la brevedad nos estaremos comunicando.">
+    <link rel="shortcut icon" href="./img/logo_uniform.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Servicios</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
 </head>
 
 <body>
+
     <!-- ini HEADER -->
     <header class="header">
         <!-- <div class="head-izq">
@@ -30,7 +34,7 @@
         <!-- BOOTSTRAP! -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <img src="./img/logo_uniform.png" alt="logo">
+                <a href="../index.html"><img src="../img/logo_uniform.png" alt="logo"></a>
                 <h3>Uniformes Empresariales</h3>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,13 +44,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                            <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="empresa.html">Empresa</a>
+                            <a class="nav-link active" aria-current="page" href="./empresa.html">Empresa</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -54,12 +58,12 @@
                                 Catálogo
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="admin.html">Administrativos</a></li>
-                                <li><a class="dropdown-item" href="sanid.html">Sanidad</a></li>
+                                <li><a class="dropdown-item" href="./admin.html">Administrativos</a></li>
+                                <li><a class="dropdown-item" href="./sanid.html">Sanidad</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -70,33 +74,39 @@
 
     <!-- ini MAIN -->
     <main>
-        <h2>Nuestros servicios</h2>
-        <div class="servicios">
-            <div class="medidas">
-                <img class="hero" src="./img/medidas.jpg" alt="medidas">
-                <h3>Toma de medidas</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat magnam maiores laborum optio eos,
-                    error harum nulla mollitia et provident illo consectetur accusamus quibusdam dicta asperiores.
-                    Dignissimos reiciendis soluta quia.</p>
-            </div>
-            <div class="asesor">
-                <img src="./img/hilos.jpg" alt="hilos_colores">
-                <h3>Asesoramiento</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae omnis et fugiat atque aliquid
-                    consectetur quisquam rem possimus perferendis quae consequuntur sequi, quaerat, voluptates corrupti
-                    illum natus eveniet totam ex?</p>
-            </div>
-            <div class="confec">
-                <img src="./img/coser.jpg" alt="maquina_coser">
-                <h3>Confección</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio temporibus iusto repudiandae!
-                    Veritatis accusamus, provident tenetur tempora unde architecto doloremque reprehenderit rerum nulla
-                    soluta velit iste quia, possimus, dolores dicta.</p>
-            </div>
-        </div>
+        <h2>Contacto</h2>
+        <form>
+            <fieldset class="fieldset">
+                <div class="contenedorCampos">
+                    <label for="nombre">Nombre</label>
+                    <input name="nombre" class="" type="text" placeholder="Escriba su nombre aquí">
+                    <label for="tel">Teléfono</label>
+                    <input name="tel" class="" type="number" placeholder="Escriba su teléfono aquí">
+                    <label for="email">E-mail</label>
+                    <input name="email" class="" id="email" type="email" placeholder="Escriba su e-mail aquí">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="" name="mensaje" id="" placeholder="Escriba su mensaje aquí"></textarea>
+                    <label for="prenda">¿En qué tipo de prenda está interesado/a?</label>
+                    <select class="" name="" id="">
+                        <option disabled selected value="">Elija su prenda aquí</option>
+                        <option value="">Camisas</option>
+                        <option value="">Pantalones</option>
+                        <option value="">Blazers</option>
+                        <option value="">Todas las anteriores</option>
+                    </select>
+                    <label for="">
+                        <input type="checkbox">
+                        <span>¿Le gustaría recibir ofertas especiales?</span>
+                    </label>
+                    <div class="botonesform">
+                        <input type="reset" class="formbot" name="" id="" value="Borrar formulario">
+                        <input type="submit" class="formbot" value="Enviar respuesta" name="" id="">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </main>
     <!-- fin MAIN -->
-
     <!-- ini FOOTER -->
     <footer>
         <div class="footer">
