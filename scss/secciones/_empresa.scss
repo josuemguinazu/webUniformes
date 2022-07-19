@@ -1,31 +1,77 @@
-.nosotros {
-  display: grid;
-  align-content: space-around;
-  grid-template-columns: repeat(2, 1fr);
-  height: 30rem;
-
-  p {
-    padding: 20px;
+.emprSect {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 0% 6%;
+  gap: 1em;
+  .emprTit {
+    align-self: center;
+    font-size: 2em;
   }
-  .bloq:hover {
-    color: whitesmoke;
-    border-top: 2px solid #ffffff;
-    border-radius: 10px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 50%,
-      rgba(0, 212, 255, 1) 100%
-    );
-    transition-duration: 0.8s;
+
+  .emprGrup {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    &:hover {
+      font-weight: 700;
+      filter: invert(64%) sepia(54%) saturate(6699%) hue-rotate(201deg)
+        brightness(97%) contrast(97%);
+      transform: scale(1.08);
+      transition: 0.3s ease-in;
+    }
+  }
+
+  .emprImg {
+    width: 200px;
+  }
+
+  .emprSubt {
+    margin: 0.2em;
+    font-size: 1.5em;
+  }
+
+  .emprText {
+    margin: 1rem;
+  }
+
+  .emprGrup-der {
+    align-self: flex-end;
+    text-align: right;
   }
 }
 
 @media (max-width: 688px) {
-  .nosotros {
-    display: flex;
+  .emprTit {
+    margin-bottom: 7%;
+  }
+  .emprSect {
+    padding: 0;
+  }
+  .emprGrup {
     flex-direction: column;
-    height: auto;
+    margin: 0 auto;
+    max-width: 90vw;
+    &:hover {
+      transform: none;
+      transition: none;
+    }
+  }
+  .emprGrup-der {
+    flex-direction: column-reverse;
+    max-width: 90vw;
+    margin: 0 auto;
+    align-self: flex-start;
+  }
+  .emprImg {
+    max-width: 120px;
+  }
+  .emprText {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .txtDer {
+    margin: 1rem;
+    text-align: center;
   }
 }

@@ -2,21 +2,26 @@
   img {
     max-width: 100%;
   }
-
+  width: 95vw;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   align-items: center;
   gap: 12px;
   margin-top: 1%;
   text-align: center;
-  height: 30rem;
 }
 
 @media (max-width: 688px) {
   .servicios {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     height: auto;
+    .servBloq p {
+      padding: 0.6rem;
+    }
   }
   .servicios img {
     max-width: 100%;

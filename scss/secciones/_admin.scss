@@ -9,6 +9,16 @@
   border-top-left-radius: 8%;
   border-bottom-right-radius: 8%;
 }
+.carousel-caption {
+  background: #f0e9e6;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #f0e9e6 0%,
+    #bababa 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @media (max-width: 688px) {
   .carousel-item img {

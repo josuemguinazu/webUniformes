@@ -5,29 +5,61 @@ main {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin-top: 1%;
-    width: 95vw;
     .hero {
       height: 100%;
       width: 100%;
     }
-    .herotxt {
+    .heroDer {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 22px;
-      font-size: 1.6rem;
+      .heroTxt {
+        font-size: 3.8rem;
+        font-family: "Splash", cursive;
+        animation: colores 4s infinite alternate;
+        @keyframes colores {
+          0% {
+            color: #405de6;
+          }
+          20% {
+            color: #5b51d8;
+          }
+          40% {
+            color: #833ab4;
+          }
+          60% {
+            color: #c13584;
+          }
+          80% {
+            color: #e1306c;
+          }
+          100% {
+            color: #fd1d1d;
+          }
+        }
+      }
+      .subHeroTxt {
+        padding: 0.8rem;
+        text-align: center;
+        font-size: 1.2rem;
+        a {
+          text-decoration: none;
+          color: rgb(0, 3, 177);
+        }
+      }
     }
   }
 }
-
 @media (max-width: 688px) {
   main {
     .container {
       display: flex;
       flex-direction: column;
-    }
-    .herotxt {
-      font-size: 1rem;
+      .heroTxt {
+        text-align: center;
+        font-size: 3rem;
+      }
     }
   }
 }
